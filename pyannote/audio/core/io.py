@@ -39,7 +39,7 @@ import torchaudio
 from pyannote.core import Segment
 from torch import Tensor
 
-torchaudio.set_audio_backend("soundfile")
+torchaudio.set_audio_backend("sox_io")
 
 AudioFile = Union[Text, Path, IOBase, Mapping]
 
